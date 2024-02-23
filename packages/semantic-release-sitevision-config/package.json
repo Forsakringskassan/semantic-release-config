@@ -1,0 +1,35 @@
+{
+  "name": "@forsakringskassan/semantic-release-sitevision-config",
+  "version": "2.3.1",
+  "description": "Försäkringskassan semantic-release sitevision configuration",
+  "keywords": [],
+  "homepage": "https://github.com/Forsakringskassan/semantic-release-config",
+  "bugs": "https://github.com/Forsakringskassan/semantic-release-config/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forsakringskassan/semantic-release-config.git",
+    "directory": "packages/semantic-release-sitevision-config"
+  },
+  "license": "MIT",
+  "author": "Försäkringskassan",
+  "main": "index.js",
+  "bin": {
+    "semantic-release": "bin/semantic-release.js"
+  },
+  "files": [
+    "*.js",
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@forsakringskassan/semantic-release-config": "2.3.1",
+    "semantic-release": "19.0.5"
+  },
+  "engines": {
+    "node": ">= 16",
+    "npm": ">= 7"
+  }
+}

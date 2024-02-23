@@ -1,0 +1,58 @@
+{
+  "name": "@forsakringskassan/semantic-release-monorepo",
+  "version": "2.3.2-4",
+  "private": true,
+  "keywords": [],
+  "homepage": "https://github.com/Forsakringskassan/semantic-release-config",
+  "bugs": "https://github.com/Forsakringskassan/semantic-release-config/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forsakringskassan/semantic-release-config.git"
+  },
+  "license": "MIT",
+  "author": "Försäkringskassan",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint --fix .",
+    "lerna": "lerna",
+    "prepare": "husky",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
+    "test": "npm run eslint && npm run prettier:check",
+    "posttest": "node scripts/dry-run.js"
+  },
+  "commitlint": {
+    "extends": "@forsakringskassan/commitlint-config/no-jira"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,scss,css,md}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": "@forsakringskassan/prettier-config",
+  "devDependencies": {
+    "@forsakringskassan/commitlint-config": "1.1.0",
+    "@forsakringskassan/eslint-config": "10.1.0",
+    "@forsakringskassan/eslint-config-cli": "10.1.0",
+    "@forsakringskassan/prettier-config": "1.3.11",
+    "@html-validate/release-scripts": "6.2.0",
+    "husky": "9.0.11",
+    "lerna": "6.6.2",
+    "lint-staged": "15.2.2",
+    "rimraf": "5.0.5"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "renovate": {
+    "extends": "local>forsakringskassan/renovate-config:lib"
+  }
+}
