@@ -2,7 +2,9 @@
   "name": "@forsakringskassan/semantic-release-common",
   "version": "2.3.0",
   "description": "Försäkringskassan semantic-release common configuration",
-  "keywords": [],
+  "keywords": [
+    "semantic-release"
+  ],
   "homepage": "https://github.com/Forsakringskassan/semantic-release-config",
   "bugs": "https://github.com/Forsakringskassan/semantic-release-config/issues",
   "repository": {
