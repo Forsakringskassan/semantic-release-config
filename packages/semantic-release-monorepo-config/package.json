@@ -2,7 +2,9 @@
   "name": "@forsakringskassan/semantic-release-monorepo-config",
   "version": "2.3.1",
   "description": "Försäkringskassan semantic-release monorepo configuration",
-  "keywords": [],
+  "keywords": [
+    "semantic-release"
+  ],
   "homepage": "https://github.com/Forsakringskassan/semantic-release-config",
   "bugs": "https://github.com/Forsakringskassan/semantic-release-config/issues",
   "repository": {
