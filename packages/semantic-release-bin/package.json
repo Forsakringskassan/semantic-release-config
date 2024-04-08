@@ -44,7 +44,7 @@
     "semantic-release-lerna": "0.8.2"
   },
   "devDependencies": {
-    "esbuild": "0.20.1",
+    "esbuild": "0.20.2",
     "npm-run-all2": "6.1.2"
   },
   "peerDependencies": {
