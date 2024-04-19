@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/semantic-release-bin",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "Försäkringskassan semantic-release precompiled binary",
   "keywords": [
     "semantic-release"

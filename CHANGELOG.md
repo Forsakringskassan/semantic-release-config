@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.4.1 (2024-04-19)
+
+
+### Bug Fixes
+
+* **@forsakringskassan/semantic-release-monorepo-config:** allow potential docs package to receive version bump ead98f1
+
 ## 2.4.0 (2024-02-27)
 
 
