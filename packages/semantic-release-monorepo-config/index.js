@@ -49,6 +49,7 @@ module.exports = {
                     "package-lock.json",
                     "lerna.json",
                     "CHANGELOG.md",
+                    "docs/package.json",
                     "internal/*/package.json",
                     "internal/*/package-lock.json",
                     "packages/*/package.json",
