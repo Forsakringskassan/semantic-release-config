@@ -38,7 +38,7 @@
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/npm": "9.0.2",
-    "@semantic-release/release-notes-generator": "10.0.3",
+    "@semantic-release/release-notes-generator": "13.0.0",
     "conventional-changelog-conventionalcommits": "6.1.0",
     "semantic-release": "19.0.5",
     "semantic-release-lerna": "0.8.2"
