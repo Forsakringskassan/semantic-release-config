@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@forsakringskassan/semantic-release-config": "2.4.1",
-    "semantic-release": "19.0.5"
+    "semantic-release": "23.1.1"
   },
   "engines": {
     "node": ">= 16",
