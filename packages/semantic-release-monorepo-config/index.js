@@ -54,6 +54,7 @@ module.exports = {
                     "internal/*/package-lock.json",
                     "packages/*/package.json",
                     "packages/*/package-lock.json",
+                    "preview/package.json",
                 ],
                 message:
                     "chore(release): ${nextRelease.version} (refs SB-4982)\n\n${nextRelease.notes}",
