@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.4.2 (2024-06-20)
+
+
+### Bug Fixes
+
+* **@forsakringskassan/semantic-release-monorepo-config:** allow potential preview package to receive version bump 921acb3
+
 ## 2.4.1 (2024-04-19)
 
 
