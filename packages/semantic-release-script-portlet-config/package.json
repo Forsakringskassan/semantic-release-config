@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/semantic-release-script-portlet-config",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "description": "Försäkringskassan semantic-release script-portlet configuration",
   "keywords": [
     "semantic-release"
@@ -27,7 +27,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@forsakringskassan/semantic-release-config": "2.4.2",
+    "@forsakringskassan/semantic-release-config": "2.5.0",
     "semantic-release": "19.0.5"
   },
   "engines": {

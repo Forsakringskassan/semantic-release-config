@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.5.0 (2024-06-28)
+
+
+### Features
+
+* **deps:** support libnpmversion v6 b8bf939
+
 ## 2.4.2 (2024-06-20)
 
 
