@@ -43,7 +43,7 @@
     "@html-validate/release-scripts": "6.5.0",
     "lerna": "6.6.2",
     "lint-staged": "15.2.7",
-    "rimraf": "5.0.8"
+    "rimraf": "5.0.9"
   },
   "engines": {
     "node": ">= 16"
