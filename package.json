@@ -42,7 +42,7 @@
   "devDependencies": {
     "@html-validate/release-scripts": "6.5.3",
     "lerna": "6.6.2",
-    "lint-staged": "15.2.7",
+    "lint-staged": "15.2.8",
     "rimraf": "6.0.1"
   },
   "engines": {
