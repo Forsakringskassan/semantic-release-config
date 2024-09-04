@@ -26,7 +26,7 @@
     "@forsakringskassan/semantic-release-common": "2.5.0"
   },
   "devDependencies": {
-    "lerna": "6.6.2"
+    "lerna": "8.1.8"
   },
   "peerDependencies": {
     "lerna": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0"
