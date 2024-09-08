@@ -26,7 +26,7 @@
     "@forsakringskassan/semantic-release-common": "2.5.0"
   },
   "engines": {
-    "node": ">= 20",
+    "node": ">= 20.8.1",
     "npm": ">= 7"
   }
 }
