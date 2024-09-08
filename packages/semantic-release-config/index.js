@@ -4,6 +4,8 @@ const {
     changelogRules,
 } = require("@forsakringskassan/semantic-release-common");
 
+const isGithub = Boolean(process.env.GITHUB_ACTION);
+
 module.exports = {
     branches,
     plugins: [
@@ -50,5 +52,12 @@ module.exports = {
                     "chore(release): ${nextRelease.version} (refs SB-4982)\n\n${nextRelease.notes}",
             },
         ],
-    ],
+
+        isGithub
+            ? [
+                  // Create release page and add comments/labels to merged pull requests and resolved issues
+                  "@semantic-release/github",
+              ]
+            : null,
+    ].filter(Boolean),
 };
