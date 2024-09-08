@@ -4,24 +4,21 @@ const {
     changelogRules,
 } = require("@forsakringskassan/semantic-release-common");
 
-const binPkg = "@forsakringskassan/semantic-release-bin";
-const plugin = (name) => require.resolve(`${binPkg}/${name}`);
-
 module.exports = {
     branches,
     plugins: [
         [
             // Analyze and collect information from commits
-            plugin("commit-analyzer"),
+            "@semantic-release/commit-analyzer",
             {
-                config: plugin("conventionalcommits"),
+                config: "conventional-changelog-conventionalcommits",
                 releaseRules,
             },
         ],
 
         [
             // Generate a CHANGELOG for the release notes
-            plugin("changelog"),
+            "@semantic-release/changelog",
             {
                 changelogFile: "CHANGELOG.md",
                 changelogTitle: "# CHANGELOG",
@@ -30,10 +27,10 @@ module.exports = {
 
         [
             // Bump version and publish npm packages
-            plugin("semantic-release-lerna"),
+            "semantic-release-lerna",
             {
                 generateNotes: true,
-                config: plugin("conventionalcommits"),
+                config: "conventional-chjangelog-conventionalcommits",
                 presetConfig: {
                     types: changelogRules,
                 },
@@ -42,7 +39,7 @@ module.exports = {
 
         [
             // Push new commit for CHANGELOG.md, package.json and package-lock.json
-            plugin("git"),
+            "@semantic-release/git",
             {
                 assets: [
                     "package.json",
