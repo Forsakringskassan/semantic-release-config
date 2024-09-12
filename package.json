@@ -40,7 +40,7 @@
   },
   "prettier": "@forsakringskassan/prettier-config",
   "devDependencies": {
-    "@html-validate/release-scripts": "6.5.3",
+    "@html-validate/release-scripts": "6.6.0",
     "lerna": "6.6.2",
     "lint-staged": "15.2.10",
     "rimraf": "6.0.1"
