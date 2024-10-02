@@ -26,10 +26,10 @@
     "@forsakringskassan/semantic-release-common": "2.5.0"
   },
   "devDependencies": {
-    "lerna": "6.6.2"
+    "lerna": "8.1.8"
   },
   "peerDependencies": {
-    "lerna": "^3 || ^4 || ^5 || ^6"
+    "lerna": "^3 || ^4 || ^5 || ^6 || ^8.0.0"
   },
   "engines": {
     "node": ">= 16",
