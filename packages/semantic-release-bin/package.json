@@ -48,7 +48,7 @@
     "npm-run-all2": "6.2.4"
   },
   "peerDependencies": {
-    "libnpmversion": "^3 || ^4 || ^5 || ^6"
+    "libnpmversion": "^3 || ^4 || ^5 || ^6 || ^7.0.0"
   },
   "engines": {
     "node": ">= 16",
