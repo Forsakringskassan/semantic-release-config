@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "esbuild": "0.24.0",
-    "npm-run-all2": "7.0.0"
+    "npm-run-all2": "7.0.1"
   },
   "peerDependencies": {
     "libnpmversion": "^3 || ^4 || ^5 || ^6"
