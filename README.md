@@ -8,9 +8,9 @@
 
 The shareable configs can be configured in the semantic-release configuration file
 
--   Primary releases from `master` (alias: `main`, `dev`).
--   Hotfixes from `release/N.x` and `release/N.N.x`.
--   Prereleases from `beta`.
+- Primary releases from `master` (alias: `main`, `dev`).
+- Hotfixes from `release/N.x` and `release/N.N.x`.
+- Prereleases from `beta`.
 
 ### NPM package
 
