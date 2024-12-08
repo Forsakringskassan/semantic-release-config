@@ -23,7 +23,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "engines": {
-    "node": ">= 16",
+    "node": ">= 20",
     "npm": ">= 7"
   }
 }
