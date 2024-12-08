@@ -4,32 +4,31 @@ const {
     changelogRules,
 } = require("@forsakringskassan/semantic-release-common");
 
-const binPkg = "@forsakringskassan/semantic-release-bin";
-const plugin = (name) => require.resolve(`${binPkg}/${name}`);
+const isGithub = Boolean(process.env.GITHUB_ACTION);
 
 module.exports = {
     branches,
     plugins: [
         [
             // Analyze and collect information from commits
-            plugin("commit-analyzer"),
+            "@semantic-release/commit-analyzer",
             {
-                config: plugin("conventionalcommits"),
+                config: "conventional-changelog-conventionalcommits",
                 releaseRules,
             },
         ],
 
         [
             // Generate release notes from the analyzed commits
-            plugin("release-notes-generator"),
+            "@semantic-release/release-notes-generator",
             {
-                config: plugin("conventionalcommits"),
+                config: "conventional-changelog-conventionalcommits",
             },
         ],
 
         [
             // Generate a CHANGELOG for the release notes
-            plugin("changelog"),
+            "@semantic-release/changelog",
             {
                 changelogFile: "CHANGELOG.md",
                 changelogTitle: "# CHANGELOG",
@@ -41,17 +40,24 @@ module.exports = {
 
         [
             // Update package.json version and publish npm package
-            plugin("npm"),
+            "@semantic-release/npm",
         ],
 
         [
             // Push new commit for CHANGELOG.md, package.json and package-lock.json
-            plugin("git"),
+            "@semantic-release/git",
             {
                 assets: ["package.json", "package-lock.json", "CHANGELOG.md"],
                 message:
                     "chore(release): ${nextRelease.version} (refs SB-4982)\n\n${nextRelease.notes}",
             },
         ],
-    ],
+
+        isGithub
+            ? [
+                  // Create release page and add comments/labels to merged pull requests and resolved issues
+                  "@semantic-release/github",
+              ]
+            : null,
+    ].filter(Boolean),
 };
