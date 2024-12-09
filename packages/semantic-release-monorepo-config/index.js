@@ -32,7 +32,7 @@ module.exports = {
             "semantic-release-lerna",
             {
                 generateNotes: true,
-                config: "conventional-chjangelog-conventionalcommits",
+                config: "conventional-changelog-conventionalcommits",
                 presetConfig: {
                     types: changelogRules,
                 },
