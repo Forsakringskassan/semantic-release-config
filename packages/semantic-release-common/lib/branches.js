@@ -9,7 +9,7 @@ module.exports = [
         name: "release/+([0-9])?(.{+([0-9]),x}).x",
         range: "${name.replace(/^release\\//g, '')}",
         channel: "${name.replace(/^release\\//g, '')}",
-        prerelease: false
+        prerelease: false,
     },
 
     /* beta releases */
