@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.0.1 (2024-12-16)
+
+### Bug Fixes
+
+* **@forsakringskassan/semantic-release-common:** explicitly mark main branches as not prerelease b161982
+
 ## 3.0.0 (2024-12-09)
 
 ### ⚠ BREAKING CHANGES
