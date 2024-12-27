@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.0.2 (2024-12-27)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/release-notes-generator to v14.0.2 495b40f
+* **deps:** update dependency semantic-release-lerna to v2.10.0 dfc784e
+
 ## 3.0.1 (2024-12-16)
 
 ### Bug Fixes
