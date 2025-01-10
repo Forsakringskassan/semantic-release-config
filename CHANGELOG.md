@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 3.0.3 (2025-01-10)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/commit-analyzer to v13.0.1 f5a90d6
+* **deps:** update dependency @semantic-release/release-notes-generator to v14.0.3 7fcca9c
+* **deps:** update dependency semantic-release to v24.2.1 fae2af8
+
 ## 3.0.2 (2024-12-27)
 
 ### Bug Fixes
