@@ -48,7 +48,7 @@
     "@html-validate/release-scripts": "6.7.5",
     "husky": "9.1.7",
     "lerna": "8.1.9",
-    "lint-staged": "15.4.0",
+    "lint-staged": "15.4.1",
     "rimraf": "6.0.1"
   },
   "engines": {
