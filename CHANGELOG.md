@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.0.4 (2025-01-24)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/github to v10.3.5 c54eb76
+
 ## 3.0.3 (2025-01-10)
 
 ### Bug Fixes
