@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/semantic-release-monorepo-config",
-  "version": "3.0.4",
+  "version": "3.1.0",
   "description": "Försäkringskassan semantic-release monorepo configuration",
   "keywords": [
     "semantic-release"
@@ -22,7 +22,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@forsakringskassan/semantic-release-common": "3.0.1",
+    "@forsakringskassan/semantic-release-common": "3.1.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/commit-analyzer": "13.0.1",
     "@semantic-release/git": "10.0.1",

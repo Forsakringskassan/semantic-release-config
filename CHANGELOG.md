@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 3.1.0 (2025-02-14)
+
+### Features
+
+* **deps:** update dependency @semantic-release/github to v11 d74cf6c
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release to v24.2.2 8f07212
+* **deps:** update dependency semantic-release-lerna to v2.11.0 a9bce94
+
 ## 3.0.4 (2025-01-24)
 
 ### Bug Fixes
