@@ -47,7 +47,7 @@
     "@forsakringskassan/prettier-config": "3.0.3",
     "@html-validate/release-scripts": "6.7.5",
     "husky": "9.1.7",
-    "lerna": "8.1.9",
+    "lerna": "8.2.0",
     "lint-staged": "15.4.3",
     "rimraf": "6.0.1"
   },
