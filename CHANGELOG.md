@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.2.0 (2025-03-14)
+
+### Features
+
+* **@forsakringskassan/semantic-release-monorepo-config:** allow version bump in `publiccode.yml` bc21ff9
+
 ## 3.1.1 (2025-02-21)
 
 ### Bug Fixes
