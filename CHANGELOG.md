@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.2.1 (2025-05-02)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/github to v11.0.2 e6151ba
+
 ## 3.2.0 (2025-03-14)
 
 ### Features
