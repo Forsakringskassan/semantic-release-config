@@ -45,7 +45,7 @@
     "@forsakringskassan/eslint-config": "11.9.6",
     "@forsakringskassan/eslint-config-cli": "11.9.0",
     "@forsakringskassan/prettier-config": "3.0.5",
-    "@html-validate/release-scripts": "6.8.0",
+    "@html-validate/release-scripts": "6.8.3",
     "husky": "9.1.7",
     "lerna": "8.2.2",
     "lint-staged": "15.5.2",
