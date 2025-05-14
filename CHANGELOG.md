@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.2.2 (2025-05-14)
+
+### Bug Fixes
+
+* **@forsakringskassan/semantic-release-monorepo-config:** add examples package (refs SFKUI-6500) fccb752
+
 ## 3.2.1 (2025-05-02)
 
 ### Bug Fixes
