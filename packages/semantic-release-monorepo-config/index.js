@@ -53,6 +53,8 @@ module.exports = {
                     "internal/*/package-lock.json",
                     "packages/*/package.json",
                     "packages/*/package-lock.json",
+                    "examples/*/package.json",
+                    "examples/*/package-lock.json",
                     "preview/package.json",
                     "publiccode.yml",
                 ],
