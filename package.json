@@ -30,25 +30,15 @@
   "commitlint": {
     "extends": "@forsakringskassan/commitlint-config/no-jira"
   },
-  "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix"
-    ],
-    "*.{json,scss,css,md}": [
-      "prettier --write"
-    ]
-  },
   "prettier": "@forsakringskassan/prettier-config",
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "1.4.2",
+    "@forsakringskassan/commitlint-config": "2.0.1",
     "@forsakringskassan/eslint-config": "11.9.6",
     "@forsakringskassan/eslint-config-cli": "11.9.0",
     "@forsakringskassan/prettier-config": "3.0.5",
     "@html-validate/release-scripts": "6.8.3",
     "husky": "9.1.7",
     "lerna": "8.2.2",
-    "lint-staged": "15.5.2",
     "rimraf": "6.0.1"
   },
   "engines": {
