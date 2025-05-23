@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.2.3 (2025-05-23)
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release to v24.2.4 e994803
+
 ## 3.2.2 (2025-05-14)
 
 ### Bug Fixes
