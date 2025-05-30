@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 3.3.0 (2025-05-30)
+
+### Features
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v9 4ea9be6
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/github to v11.0.3 b8cc0a1
+* **deps:** update dependency semantic-release to v24.2.5 b318d9e
+
 ## 3.2.3 (2025-05-23)
 
 ### Bug Fixes
