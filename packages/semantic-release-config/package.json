@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/semantic-release-config",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "Försäkringskassan semantic-release base configuration",
   "keywords": [
     "semantic-release"

@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.3.1 (2025-07-04)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/npm to v12.0.2 38d086e
+* **deps:** update dependency semantic-release to v24.2.6 e804043
+
 ## 3.3.0 (2025-05-30)
 
 ### Features
