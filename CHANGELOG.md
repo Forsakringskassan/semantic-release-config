@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.3.2 (2025-07-18)
+
+### Bug Fixes
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v9.1.0 598c6a8
+* **deps:** update dependency semantic-release to v24.2.7 fa562a8
+
 ## 3.3.1 (2025-07-04)
 
 ### Bug Fixes
