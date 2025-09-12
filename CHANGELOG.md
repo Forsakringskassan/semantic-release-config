@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.3.4 (2025-09-12)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/github to v11.0.5 5522507
+* **deps:** update dependency @semantic-release/release-notes-generator to v14.1.0 e174673
+
 ## 3.3.3 (2025-08-15)
 
 ### Bug Fixes
