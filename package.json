@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/semantic-release-monorepo",
-  "version": "3.3.4",
+  "version": "3.3.5",
   "private": true,
   "keywords": [
     "semantic-release"

@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.3.5 (2025-09-19)
+
+### Bug Fixes
+
+* **deps:** update semantic-release monorepo 799a8d8
+
 ## 3.3.4 (2025-09-12)
 
 ### Bug Fixes
