@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 3.4.0 (2025-09-28)
+
+### Features
+
+* **deps:** support lerna v9 2bf039f
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release-lerna to v2.12.0 420b743
+
 ## 3.3.6 (2025-09-26)
 
 ### Bug Fixes
