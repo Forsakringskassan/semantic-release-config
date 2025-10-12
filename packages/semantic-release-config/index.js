@@ -1,7 +1,7 @@
 const {
     branches,
-    releaseRules,
     changelogRules,
+    releaseRules,
 } = require("@forsakringskassan/semantic-release-common");
 
 const isGithub = Boolean(process.env.GITHUB_ACTION);
