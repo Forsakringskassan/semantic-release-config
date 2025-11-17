@@ -34,7 +34,7 @@
     "semantic-release-lerna": "2.13.0"
   },
   "devDependencies": {
-    "lerna": "9.0.0"
+    "lerna": "9.0.1"
   },
   "peerDependencies": {
     "lerna": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0"
