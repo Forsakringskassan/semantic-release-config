@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 3.5.0 (2025-11-21)
+
+### Features
+
+* **deps:** update dependency @semantic-release/npm to v13 e44129b
+* **deps:** update semantic-release monorepo 52048a4
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/github to v12.0.1 1730c6b
+* **deps:** update dependency @semantic-release/github to v12.0.2 be11761
+* **deps:** update dependency @semantic-release/npm to v13.1.2 1529b72
+* **deps:** update dependency semantic-release to v25.0.2 38cbbaa
+* **deps:** update dependency semantic-release-lerna to v2.13.0 cc6a574
+* **deps:** update dependency semantic-release-lerna to v2.14.1 7ae9d79
+* **deps:** update semantic-release monorepo c7cd7c7
+
 ## 3.4.0 (2025-09-28)
 
 ### Features
