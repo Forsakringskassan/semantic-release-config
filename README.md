@@ -26,32 +26,6 @@ Edit `package.json`:
 }
 ```
 
-### Script-portlet
-
-Use this preset if your repo is publishing an Etjänst for use with Sitevision.
-
-Edit `package.json`:
-
-```json
-{
-    "release": {
-        "extends": "@forsakringskassan/semantic-release-script-portlet-config"
-    }
-}
-```
-
-### Sitevision
-
-Edit `package.json`:
-
-```json
-{
-    "release": {
-        "extends": "@forsakringskassan/semantic-release-sitevision-config"
-    }
-}
-```
-
 ### Monorepo
 
 Use this preset if your repo is publishing NPM packages from a monorepo.
