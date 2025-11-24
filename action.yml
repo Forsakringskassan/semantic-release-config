@@ -1,0 +1,72 @@
+name: "Forsakringskassan/semantic-release-config"
+author: Försäkringskassan
+description: |
+    Github action to run semantic-release
+
+branding:
+    icon: git-pull-request
+    color: blue
+
+inputs:
+    app-slug:
+        description: Github application slug.
+        required: true
+    gh-token:
+        description: Github token used when comminting and using the Github API.
+        required: true
+    config-preset:
+        description: Configuration package to use, overrides automatic detection.
+        required: false
+    dry-run:
+        description: Run semantic-release in dry-run mode.
+        default: false
+        required: false
+    skip-install:
+        description: Set to true to skip installig semantic-release and the configuration preset.
+        default: false
+        required: false
+
+runs:
+    using: composite
+    steps:
+        - name: Get GitHub App User ID
+          shell: bash
+          id: get-user-id
+          run: |
+              echo "user-id=$(gh api "/users/${{ inputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
+          env:
+              GH_TOKEN: ${{ inputs.gh-token }}
+        - name: Set Git author
+          shell: bash
+          run: |
+              echo "GIT_AUTHOR_NAME=${{ inputs.app-slug }}[bot]" | tee -a $GITHUB_ENV
+              echo "GIT_AUTHOR_EMAIL=${{ steps.get-user-id.outputs.user-id }}+${{ inputs.app-slug }}[bot]@users.noreply.github.com" | tee -a $GITHUB_ENV
+        - name: Determine configuration preset to use
+          if: (inputs.skip-install == 'false' && inputs.skip-install != false)
+          shell: bash
+          id: config
+          run: |
+              if [[ -z "${{ inputs.config-preset }}" ]]; then
+                echo "config-preset=$(node -p 'require("./package.json").release.extends')" | tee -a "$GITHUB_OUTPUT"
+              else
+                echo "config-preset=${{ inputs.config-preset }}" | tee -a "$GITHUB_OUTPUT"
+              fi
+        - name: Install preset
+          if: (inputs.skip-install == 'false' && inputs.skip-install != false)
+          shell: bash
+          run: npm install --no-save ${{ steps.config.outputs.config-preset }}
+        - name: Release
+          shell: bash
+          env:
+              GH_TOKEN: ${{ inputs.gh-token }}
+              HUSKY: 0
+          run: |
+              npm config --location project set access public
+              npm config --location project set provenance true
+              npm exec semantic-release -- ${{ inputs.dry-run && '--dry-run' || '' }}
+        - name: Commit info
+          shell: bash
+          run: |
+              git log -n 1
+              git status
+              sleep 5 # wait a bit to allow the push to propagate, or in rare cases subsequent jobs might fail as the commit wasn't yet found.
