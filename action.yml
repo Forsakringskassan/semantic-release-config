@@ -63,7 +63,7 @@ runs:
           run: |
               npm config --location project set access public
               npm config --location project set provenance true
-              npm exec semantic-release -- ${{ inputs.dry-run && '--dry-run' || '' }}
+              npm exec semantic-release -- ${{ (inputs.dry-run == 'true' || inputs.dry-run == true) && '--dry-run' || '' }}
         - name: Commit info
           shell: bash
           run: |
