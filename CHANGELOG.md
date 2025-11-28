@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 3.6.0 (2025-11-28)
+
+### Features
+
+* add github action to run semantic-release e8b4607
+
+### Bug Fixes
+
+* **actions:** fix `--dry-run` being applied unconditionally b42dace
+* **deps:** update dependency semantic-release-lerna to v2.15.0 5b663d7
+
 ## 3.5.0 (2025-11-21)
 
 ### Features
