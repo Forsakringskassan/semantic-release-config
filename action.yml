@@ -45,12 +45,8 @@ runs:
           if: (inputs.skip-install == 'false' && inputs.skip-install != false)
           shell: bash
           id: config
-          run: |
-              if [[ -z "${{ inputs.config-preset }}" ]]; then
-                echo "config-preset=$(node -p 'require("./package.json").release.extends')" | tee -a "$GITHUB_OUTPUT"
-              else
-                echo "config-preset=${{ inputs.config-preset }}" | tee -a "$GITHUB_OUTPUT"
-              fi
+          # get-preset.mjs outputs 'config-preset' to GITHUB_OUTPUT
+          run: node "${{ github.action_path }}/get-preset.mjs" --config-preset="${{ inputs.config-preset }}"
         - name: Install preset
           if: (inputs.skip-install == 'false' && inputs.skip-install != false)
           shell: bash
