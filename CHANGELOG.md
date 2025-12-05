@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.7.0 (2025-12-05)
+
+### Features
+
+* **deps:** require nodejs v22 or later f0faf0b
+* support `release.config.{mjs,cjs,js}` configuration files 1902fa8
+
 ## 3.6.1 (2025-12-05)
 
 ### Bug Fixes
