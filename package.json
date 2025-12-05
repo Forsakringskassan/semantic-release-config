@@ -36,7 +36,9 @@
     "@forsakringskassan/eslint-config-cli": "13.2.0",
     "@forsakringskassan/prettier-config": "3.3.0",
     "@html-validate/release-scripts": "7.1.0",
+    "@types/node": "22.19.1",
     "lerna": "9.0.3",
+    "npm-pkg-lint": "4.3.1",
     "rimraf": "6.1.2"
   },
   "engines": {
