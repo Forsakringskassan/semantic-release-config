@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.6.1 (2025-12-05)
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release-lerna to v2.15.1 5a38d41
+
 ## 3.6.0 (2025-11-28)
 
 ### Features
