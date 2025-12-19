@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/semantic-release-monorepo-config",
-  "version": "3.7.1",
+  "version": "3.7.2",
   "description": "Försäkringskassan semantic-release monorepo configuration",
   "keywords": [
     "semantic-release"

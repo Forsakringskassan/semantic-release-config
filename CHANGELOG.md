@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.7.2 (2025-12-19)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/npm to v13.1.3 2335d7f
+* **deps:** update dependency semantic-release-lerna to v2.16.0 65d9438
+
 ## 3.7.1 (2025-12-12)
 
 ### Bug Fixes
