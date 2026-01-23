@@ -39,7 +39,7 @@
     "@html-validate/release-scripts": "7.1.0",
     "@types/node": "22.19.7",
     "lerna": "9.0.3",
-    "memfs": "4.54.0",
+    "memfs": "4.56.4",
     "npm-pkg-lint": "4.3.2",
     "rimraf": "6.1.2"
   },
