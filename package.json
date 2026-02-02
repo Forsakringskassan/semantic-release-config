@@ -40,7 +40,7 @@
     "@types/node": "22.19.7",
     "lerna": "9.0.3",
     "memfs": "4.56.10",
-    "npm-pkg-lint": "4.3.3",
+    "npm-pkg-lint": "4.3.4",
     "rimraf": "6.1.2"
   },
   "engines": {
