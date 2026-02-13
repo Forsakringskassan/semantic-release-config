@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.7.9 (2026-02-13)
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release-lerna to v2.17.0 1057b45
+* **deps:** update semantic-release monorepo e88e8ae
+
 ## 3.7.8 (2026-02-06)
 
 ### Bug Fixes
