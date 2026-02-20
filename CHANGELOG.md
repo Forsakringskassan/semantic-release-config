@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.7.10 (2026-02-20)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/github to v12.0.6 8ad4fa1
+* **deps:** update dependency semantic-release-lerna to v2.17.1 3ab5af2
+
 ## 3.7.9 (2026-02-13)
 
 ### Bug Fixes
