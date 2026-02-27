@@ -35,7 +35,7 @@
     "@forsakringskassan/commitlint-config": "3.3.4",
     "@forsakringskassan/eslint-config": "13.4.1",
     "@forsakringskassan/eslint-config-cli": "13.4.0",
-    "@forsakringskassan/prettier-config": "3.3.4",
+    "@forsakringskassan/prettier-config": "3.3.5",
     "@html-validate/release-scripts": "7.1.0",
     "@types/node": "22.19.11",
     "lerna": "9.0.4",
