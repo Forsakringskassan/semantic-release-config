@@ -32,7 +32,7 @@
   },
   "prettier": "@forsakringskassan/prettier-config",
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "3.3.3",
+    "@forsakringskassan/commitlint-config": "3.3.4",
     "@forsakringskassan/eslint-config": "13.4.1",
     "@forsakringskassan/eslint-config-cli": "13.4.0",
     "@forsakringskassan/prettier-config": "3.3.4",
