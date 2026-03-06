@@ -6,9 +6,10 @@ import { vol } from "memfs";
 import { findConfigPreset } from "./preset-utils.mjs";
 
 function createImportMock() {
+    /* eslint-disable-next-line unicorn/consistent-function-scoping -- by design */
     return async (fileUrl) => {
         const filePath = fileURLToPath(fileUrl);
-        const normalizedPath = filePath.replace(/^[A-Z]:/i, "");
+        const normalizedPath = filePath.replace(/^[a-z]:/i, "");
 
         try {
             const content = await vol.promises.readFile(normalizedPath, "utf8");
