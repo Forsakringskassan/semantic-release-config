@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 3.7.12 (2026-03-06)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/npm to v13.1.5 13c38b3
+* **deps:** update dependency conventional-changelog-conventionalcommits to v9.2.0 e1a53ee
+* **deps:** update dependency semantic-release-lerna to v2.18.0 eca4b4c
+
 ## 3.7.11 (2026-02-27)
 
 ### Bug Fixes
