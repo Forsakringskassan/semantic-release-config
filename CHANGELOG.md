@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.7.13 (2026-03-13)
+
+### Bug Fixes
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v9.3.0 58614c0
+* **deps:** update dependency semantic-release-lerna to v2.18.1 e5035a8
+
 ## 3.7.12 (2026-03-06)
 
 ### Bug Fixes
