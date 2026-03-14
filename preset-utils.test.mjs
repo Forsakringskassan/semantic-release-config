@@ -16,6 +16,7 @@ function createImportMock() {
 
             if (normalizedPath.endsWith(".mjs")) {
                 const context = vm.createContext({});
+                /* eslint-disable-next-line sonarjs/code-eval -- not under user control and is only used in tests */
                 const m = new vm.SourceTextModule(content, {
                     context,
                     identifier: fileUrl,
@@ -33,6 +34,7 @@ function createImportMock() {
                     exports: {},
                     module: { exports: {} },
                 });
+                /* eslint-disable-next-line sonarjs/code-eval -- not under user control and is only used in tests */
                 vm.runInContext(content, context);
                 return { default: context.module.exports };
             }
