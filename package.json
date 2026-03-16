@@ -38,7 +38,7 @@
     "@forsakringskassan/prettier-config": "3.3.6",
     "@html-validate/release-scripts": "7.1.15",
     "@types/node": "22.19.15",
-    "lerna": "9.0.6",
+    "lerna": "9.0.7",
     "memfs": "4.56.11",
     "npm-pkg-lint": "4.4.2",
     "rimraf": "6.1.3"
