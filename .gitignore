@@ -3,6 +3,7 @@
 .eslintcache
 node_modules
 coverage
+dist
 
 # Local env files
 .env.local

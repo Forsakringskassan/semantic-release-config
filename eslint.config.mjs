@@ -1,5 +1,6 @@
 import defaultConfig, { defineConfig } from "@forsakringskassan/eslint-config";
 import cliConfig from "@forsakringskassan/eslint-config-cli";
+import typescriptConfig from "@forsakringskassan/eslint-config-typescript";
 
 export default [
     defineConfig({
@@ -13,6 +14,7 @@ export default [
     }),
 
     ...defaultConfig,
+    typescriptConfig(),
 
     cliConfig({
         files: ["**/*.{js,ts,mjs}"],
