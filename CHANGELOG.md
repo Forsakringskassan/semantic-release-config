@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.8.0 (2026-03-27)
+
+### Features
+
+* **@forsakringskassan/semantic-release-cloneman-plugin:** cloneman plugin 43137e7
+
 ## 3.7.13 (2026-03-13)
 
 ### Bug Fixes
