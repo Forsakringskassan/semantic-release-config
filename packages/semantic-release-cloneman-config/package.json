@@ -1,0 +1,40 @@
+{
+  "name": "@forsakringskassan/semantic-release-cloneman-config",
+  "version": "3.8.0",
+  "description": "Försäkringskassan semantic-release cloneman configuration",
+  "keywords": [
+    "semantic-release"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/semantic-release-config",
+  "bugs": "https://github.com/Forsakringskassan/semantic-release-config/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forsakringskassan/semantic-release-config.git",
+    "directory": "packages/semantic-release-cloneman-config"
+  },
+  "license": "MIT",
+  "author": "Försäkringskassan",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@forsakringskassan/semantic-release-cloneman-plugin": "3.8.0",
+    "@forsakringskassan/semantic-release-common": "3.8.0",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "13.0.1",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "12.0.6",
+    "@semantic-release/npm": "13.1.5",
+    "@semantic-release/release-notes-generator": "14.1.0",
+    "conventional-changelog-conventionalcommits": "9.3.0",
+    "semantic-release": "25.0.3"
+  },
+  "engines": {
+    "node": ">= 22.16",
+    "npm": ">= 7"
+  }
+}
