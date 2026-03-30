@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.9.1 (2026-03-30)
+
+### Bug Fixes
+
+* **@forsakringskassan/semantic-release-cloneman-plugin:** default export 2358671
+
 ## 3.9.0 (2026-03-30)
 
 ### Features
