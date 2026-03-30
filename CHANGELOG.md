@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.9.0 (2026-03-30)
+
+### Features
+
+* **@forsakringskassan/semantic-release-cloneman-config:** cloneman config 1a664dd
+
 ## 3.8.0 (2026-03-27)
 
 ### Features
