@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.9.2 (2026-04-01)
+
+### Bug Fixes
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v9.3.1 9417d11
+
 ## 3.9.1 (2026-03-30)
 
 ### Bug Fixes
