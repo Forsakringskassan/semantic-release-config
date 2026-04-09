@@ -19,4 +19,13 @@ export default [
     cliConfig({
         files: ["**/*.{js,ts,mjs}"],
     }),
+
+    {
+        name: "local/node-native-test",
+        files: ["packages/**/*.test.{js,ts}"],
+        rules: {
+            /* Files is imported by node native test runner */
+            "import/extensions": "off",
+        },
+    },
 ];

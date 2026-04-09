@@ -23,3 +23,10 @@ Semantic release config
     ]
 }
 ```
+
+## Environment Variables read by the plugin
+
+| Variable           | Required | Description                                                      |
+| ------------------ | -------- | ---------------------------------------------------------------- |
+| `NPM_TOKEN`        | No       | Authentication token used to publish to the npm registry.        |
+| `NPM_REGISTRY_URL` | No       | The npm registry URL. Defaults to `https://registry.npmjs.org/`. |
