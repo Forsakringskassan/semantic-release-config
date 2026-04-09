@@ -5,6 +5,6 @@ await esbuild.build({
     bundle: true,
     format: "esm",
     platform: "node",
-    external: ["@semantic-release/npm"],
+    external: ["cloneman"],
     outfile: "dist/index.js",
 });

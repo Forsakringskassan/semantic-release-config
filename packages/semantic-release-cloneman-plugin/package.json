@@ -25,21 +25,17 @@
   "scripts": {
     "prebuild": "tsc",
     "build": "node build.mjs",
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "node --test"
   },
   "devDependencies": {
     "esbuild": "0.28.0",
-    "nano-spawn": "2.1.0",
     "typescript": "6.0.2"
   },
   "peerDependencies": {
-    "cloneman": "^1.0.0"
+    "cloneman": "^1.4.0"
   },
   "engines": {
     "node": ">= 22.16",
     "npm": ">= 7"
-  },
-  "dependencies": {
-    "@semantic-release/npm": "13.1.5"
   }
 }
