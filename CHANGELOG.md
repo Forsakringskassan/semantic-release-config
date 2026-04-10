@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.9.5 (2026-04-10)
+
+### Bug Fixes
+
+* **@forsakringskassan/semantic-release-cloneman-plugin:** read npm token from environment variable ac812b5
+
 ## 3.9.4 (2026-04-06)
 
 ### Bug Fixes
