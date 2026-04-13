@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/semantic-release-cloneman-config",
-  "version": "3.9.5",
+  "version": "3.9.6",
   "description": "Försäkringskassan semantic-release cloneman configuration",
   "keywords": [
     "semantic-release"
@@ -22,7 +22,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@forsakringskassan/semantic-release-cloneman-plugin": "3.9.5",
+    "@forsakringskassan/semantic-release-cloneman-plugin": "3.9.6",
     "@forsakringskassan/semantic-release-common": "3.9.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/commit-analyzer": "13.0.1",

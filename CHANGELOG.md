@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.9.6 (2026-04-13)
+
+### Bug Fixes
+
+* **@forsakringskassan/semantic-release-cloneman-plugin:** read local .npmrc 728df96
+
 ## 3.9.5 (2026-04-10)
 
 ### Bug Fixes
