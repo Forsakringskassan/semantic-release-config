@@ -1,3 +1,4 @@
+import { existsSync } from "node:fs";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { pack, prepare, publish as clonemanPublish } from "cloneman";
@@ -29,16 +30,26 @@ export async function publish(
     pluginConfig: Config,
     context: PublishContext,
 ): Promise<void> {
-    const cwd = context.cwd ?? process.cwd();
+    const { cwd = process.cwd(), env, logger } = context;
     const targetDir = path.join(cwd, TEMPLATE_BUILD_PATH);
 
-    const registry =
-        context.env.NPM_REGISTRY_URL || "https://registry.npmjs.org/";
-    const token = context.env.NPM_TOKEN;
+    const localNpmrcPath = path.join(cwd, ".npmrc");
 
-    if (token) {
-        const authTokenLine = appendToken(registry, token);
-        await fs.appendFile(tmpNpmrcPath, authTokenLine);
+    if (existsSync(localNpmrcPath)) {
+        logger.log("Using local .npmrc configuration");
+        const localNpmrcContent = await fs.readFile(localNpmrcPath, "utf8");
+        await fs.appendFile(tmpNpmrcPath, localNpmrcContent);
+    } else {
+        logger.log(
+            "No local .npmrc found, using environment variables for authentication",
+        );
+        const registry = env.NPM_REGISTRY_URL ?? "https://registry.npmjs.org/";
+        const token = env.NPM_TOKEN;
+
+        if (token) {
+            const authTokenLine = appendToken(registry, token);
+            await fs.appendFile(tmpNpmrcPath, authTokenLine);
+        }
     }
 
     await prepare(cwd, targetDir);
