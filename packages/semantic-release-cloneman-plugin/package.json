@@ -28,6 +28,7 @@
     "test": "node --test"
   },
   "devDependencies": {
+    "@types/ini": "^4.1.1",
     "esbuild": "0.28.0",
     "typescript": "6.0.2"
   },
@@ -37,5 +38,9 @@
   "engines": {
     "node": ">= 22.16",
     "npm": ">= 7"
+  },
+  "dependencies": {
+    "ini": "6.0.0",
+    "registry-auth-token": "5.1.1"
   }
 }
