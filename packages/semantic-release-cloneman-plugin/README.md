@@ -24,6 +24,13 @@ Semantic release config
 }
 ```
 
+## Authentication
+
+The plugin resolves authentication in the following order:
+
+1. **Local `.npmrc`** — If a `.npmrc` file exists in the project root and contains a token for the target registry, it is used for authentication.
+2. **`NPM_TOKEN` environment variable** — If no token is found in `.npmrc`, the plugin falls back to the `NPM_TOKEN` environment variable.
+
 ## Environment Variables read by the plugin
 
 | Variable           | Required | Description                                                      |

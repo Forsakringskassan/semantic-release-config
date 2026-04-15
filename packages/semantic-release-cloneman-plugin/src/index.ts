@@ -2,6 +2,8 @@ import { existsSync } from "node:fs";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { pack, prepare, publish as clonemanPublish } from "cloneman";
+import ini from "ini";
+import registryAuthToken from "registry-auth-token";
 import type {
     Config,
     PublishContext,
@@ -33,20 +35,31 @@ export async function publish(
     const { cwd = process.cwd(), env, logger } = context;
     const targetDir = path.join(cwd, TEMPLATE_BUILD_PATH);
 
-    const localNpmrcPath = path.join(cwd, ".npmrc");
+    const registry = env.NPM_REGISTRY_URL ?? "https://registry.npmjs.org/";
 
+    const localNpmrcPath = path.join(cwd, ".npmrc");
+    let authFound = false;
     if (existsSync(localNpmrcPath)) {
-        logger.log("Using local .npmrc configuration");
-        const localNpmrcContent = await fs.readFile(localNpmrcPath, "utf8");
-        await fs.appendFile(tmpNpmrcPath, localNpmrcContent);
-    } else {
+        logger.log("Reading local .npmrc configuration");
+        const npmrcString = await fs.readFile(localNpmrcPath, "utf8");
+        const npmrc: Record<string, string> = ini.parse(npmrcString);
+
+        if (registryAuthToken(registry, { npmrc })) {
+            logger.log("Using token from .npmrc for authentication");
+            const localNpmrcContent = await fs.readFile(localNpmrcPath, "utf8");
+            await fs.appendFile(tmpNpmrcPath, localNpmrcContent);
+            authFound = true;
+        }
+    }
+
+    if (!authFound) {
         logger.log(
-            "No local .npmrc found, using environment variables for authentication",
+            "checking for NPM_TOKEN in environment variables for authentication",
         );
-        const registry = env.NPM_REGISTRY_URL ?? "https://registry.npmjs.org/";
         const token = env.NPM_TOKEN;
 
         if (token) {
+            logger.log("Appending environment token to temporary .npmrc");
             const authTokenLine = appendToken(registry, token);
             await fs.appendFile(tmpNpmrcPath, authTokenLine);
         }
