@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.9.7 (2026-04-24)
+
+### Bug Fixes
+
+* **@forsakringskassan/semantic-release-cloneman-plugin:** peer cloneman 1.8.0 fa2de32
+
 ## 3.9.6 (2026-04-13)
 
 ### Bug Fixes
