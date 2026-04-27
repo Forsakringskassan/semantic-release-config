@@ -37,7 +37,7 @@
     "@forsakringskassan/eslint-config-cli": "14.1.11",
     "@forsakringskassan/eslint-config-typescript": "14.1.15",
     "@forsakringskassan/prettier-config": "3.3.9",
-    "@html-validate/release-scripts": "7.1.19",
+    "@html-validate/release-scripts": "7.1.20",
     "@types/node": "22.19.17",
     "lerna": "9.0.7",
     "memfs": "4.57.2",
