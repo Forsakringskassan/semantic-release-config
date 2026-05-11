@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.9.9 (2026-05-11)
+
+### Bug Fixes
+
+* **@forsakringskassan/semantic-release-monorepo-config:** add private & public packages as git assets c55b289
+
 ## 3.9.8 (2026-04-27)
 
 ### Bug Fixes
