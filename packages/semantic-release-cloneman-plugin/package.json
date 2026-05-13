@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/semantic-release-cloneman-plugin",
-  "version": "3.9.7",
+  "version": "3.10.0",
   "description": "Försäkringskassan semantic-release cloneman plugin",
   "keywords": [
     "semantic-release"
