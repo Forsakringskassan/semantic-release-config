@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { toNerfDart } from "./nerf-dart.ts";
+import { toNerfDart } from "./nerf-dart";
 
 describe("toNerfDart", () => {
     it("should return protocol-less base URL for a simple registry URL", () => {
