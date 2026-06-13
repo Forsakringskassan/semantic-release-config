@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.10.5 (2026-06-13)
+
+### Bug Fixes
+
+* **deps:** update semantic-release monorepo to v25.0.5 e18b686
+
 ## 3.10.4 (2026-06-09)
 
 ### Bug Fixes
