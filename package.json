@@ -21,6 +21,7 @@
     "eslint": "eslint --cache .",
     "eslint:fix": "eslint --cache --fix .",
     "lerna": "lerna",
+    "prepare": "commitlint-config",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
     "pretest": "npm run eslint && npm run prettier:check",
@@ -32,7 +33,7 @@
   },
   "prettier": "@forsakringskassan/prettier-config",
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "3.6.9",
+    "@forsakringskassan/commitlint-config": "4.0.0",
     "@forsakringskassan/eslint-config": "15.0.17",
     "@forsakringskassan/eslint-config-cli": "15.0.0",
     "@forsakringskassan/eslint-config-typescript": "15.0.16",
@@ -46,5 +47,10 @@
   },
   "engines": {
     "node": "^22.22.2 || ^24.15.0 || >= 26.0.0"
+  },
+  "allowScripts": {
+    "esbuild": true,
+    "nx": false,
+    "unrs-resolver": true
   }
 }
