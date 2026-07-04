@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.10.10 (2026-07-04)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/github to v12.0.9 116f534
+
 ## 3.10.9 (2026-07-04)
 
 ### Bug Fixes
