@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.10.9 (2026-07-04)
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release-lerna to v3.3.0 337f5b2
+
 ## 3.10.8 (2026-06-30)
 
 ### Bug Fixes
