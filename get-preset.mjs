@@ -9,7 +9,7 @@ try {
         arg.startsWith("--config-preset="),
     );
     const configPreset = configPresetArg
-        ? configPresetArg.split("=")[1]
+        ? configPresetArg.split("=", 2)[1]
         : undefined;
 
     const preset = await findConfigPreset({ configPreset });
