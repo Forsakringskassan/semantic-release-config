@@ -26,7 +26,8 @@ function createImportMock() {
                 });
                 await m.evaluate();
                 return m.namespace;
-            } else if (
+            }
+            if (
                 normalizedPath.endsWith(".cjs") ||
                 normalizedPath.endsWith(".js")
             ) {
@@ -290,7 +291,7 @@ describe("findConfigPreset", () => {
 
             // When: findConfigPreset is called with whitespace-only preset
             const result = await findConfigPreset({
-                configPreset: "   ",
+                configPreset: " ".repeat(3),
                 cwd: "/test",
                 importModule: mockImport,
                 fs: vol.promises,

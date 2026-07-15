@@ -61,6 +61,7 @@ describe("toNerfDart", () => {
 
     it("should work with http protocol", () => {
         assert.equal(
+            /* eslint-disable-next-line unicorn/prefer-https -- intentional for test */
             toNerfDart("http://registry.example.com/"),
             "//registry.example.com/",
         );
