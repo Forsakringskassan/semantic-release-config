@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.10.14 (2026-07-17)
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release to v25.0.7 a3ccfbc
+
 ## 3.10.13 (2026-07-14)
 
 ### Bug Fixes
