@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.11.0 (2026-07-25)
+
+### Features
+
+* **deps:** update semantic-release monorepo 13b45e2
+
 ## 3.10.16 (2026-07-21)
 
 ### Bug Fixes
