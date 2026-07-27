@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.11.1 (2026-07-27)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/git to v11.0.1 212463d
+
 ## 3.11.0 (2026-07-25)
 
 ### Features
