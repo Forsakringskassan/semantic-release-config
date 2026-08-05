@@ -41,7 +41,7 @@
     "@html-validate/release-scripts": "7.5.0",
     "@types/node": "22.20.1",
     "@typescript/native": "npm:typescript@7.0.2",
-    "lerna": "9.0.7",
+    "lerna": "10.0.0",
     "memfs": "4.64.0",
     "npm-pkg-lint": "5.2.2",
     "rimraf": "6.1.3",
