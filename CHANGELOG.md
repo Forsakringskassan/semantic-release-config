@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.11.5 (2026-08-05)
+
+### Bug Fixes
+
+* **@forsakringskassan/semantic-release-monorepo-config:** fix lerna peerDependency f0b0eec
+
 ## 3.11.4 (2026-08-05)
 
 ### Bug Fixes
