@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.12.0 (2026-08-05)
+
+### Features
+
+* **deps:** support lerna v10 50bbabb
+
 ## 3.11.5 (2026-08-05)
 
 ### Bug Fixes
