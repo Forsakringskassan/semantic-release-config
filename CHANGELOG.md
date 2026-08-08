@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.12.1 (2026-08-08)
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release to v25.0.9 42f83fa
+
 ## 3.12.0 (2026-08-05)
 
 ### Features
