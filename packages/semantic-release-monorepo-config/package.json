@@ -31,7 +31,7 @@
     "@semantic-release/release-notes-generator": "14.1.1",
     "conventional-changelog-conventionalcommits": "9.3.1",
     "semantic-release": "25.0.9",
-    "semantic-release-lerna": "3.5.0"
+    "semantic-release-lerna": "3.6.0"
   },
   "devDependencies": {
     "lerna": "10.0.0"
