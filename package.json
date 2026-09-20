@@ -37,7 +37,7 @@
     "@forsakringskassan/eslint-config": "15.9.12",
     "@forsakringskassan/eslint-config-cli": "15.9.3",
     "@forsakringskassan/eslint-config-typescript": "15.9.11",
-    "@forsakringskassan/prettier-config": "3.7.8",
+    "@forsakringskassan/prettier-config": "3.7.9",
     "@html-validate/release-scripts": "7.6.11",
     "@types/node": "22.20.3",
     "@typescript/native": "npm:typescript@7.0.2",
