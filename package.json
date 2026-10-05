@@ -39,7 +39,7 @@
     "@forsakringskassan/eslint-config-typescript": "15.11.10",
     "@forsakringskassan/prettier-config": "3.7.11",
     "@html-validate/release-scripts": "7.6.12",
-    "@types/node": "22.20.4",
+    "@types/node": "22.20.5",
     "@typescript/native": "npm:typescript@7.0.2",
     "lerna": "10.0.1",
     "memfs": "4.80.0",
