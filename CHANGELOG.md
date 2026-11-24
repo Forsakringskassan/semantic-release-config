@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.12.15 (2026-11-24)
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release-lerna to v3.9.0 fb2ecfa
+
 ## 3.12.14 (2026-11-18)
 
 ### Bug Fixes
